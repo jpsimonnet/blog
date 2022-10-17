@@ -1,0 +1,26 @@
+---
+layout: base
+eleventyNavigation:
+  key: Lectures
+  parent: Ressources
+  order: 2
+---
+
+<h2>Lectures</h2>
+
+<div class="row">
+{%- for post in collections.livres | reverse  -%}
+
+<div class="  col-lg-4 col-sm-6 border-0  " >
+  <div class="h-100 p-2 card  rounded-3">
+  <img src="{{ post.data.image }}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h2 class="card-title"><a href="{{post.data.url|url}}" class=" stretched-link">{{ post.data.title }}</a></h2>
+    <p class="card-text">{{ post.data.description }}</p>
+   <p class="card-text fw-bold"> {{ post.data.date | date('LL') }}</p>
+  </div></div>
+</div>
+
+{%- endfor -%}
+
+</div>

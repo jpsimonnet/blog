@@ -1,0 +1,72 @@
+/* via https://getbootstrap.com/docs/5.0/examples/jumbotron/ */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* for bootstrap-icons (svg) */
+.bi {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  vertical-align: -0.125em;
+}
+
+.img-fit-cover-container {
+  &.rounded-3 {
+    picture img {
+      border-radius: 0.3rem !important;
+    }
+  }
+  picture {
+    width: 100%;
+    height: 100%;
+    display: flex;
+  }
+  picture img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.bigcadre {
+  background-color: #ffffff;
+  border-radius: 0.3rem;
+  box-shadow: 10px 10px 10px 0px rgb(183 183 183 / 75%);
+  border: 1px solid #e1e1e1;
+}
+
+
+h1 {color:#e5005d;}
+.reseaux  li  a {color:#e5005d !important;}
+.reseaux  li  a:hover {color:#fff !important;}
+
+.separateur {
+  display: block;
+  margin: 2em 0;
+  padding: 1.5em 0;
+  width: 100%;
+  background: url(/assets/images/oxyhr.svg) no-repeat center top;
+  border: 0;
+  opacity: 1;
+}
+
+h2.card-title, h2.card-title a, h3.card-title, h3.card-title a, a:link, a {
+  color: #e5005d !important;
+  text-decoration: none;
+}
+
+h2.card-title a:hover, h3.card-title a:hover, a:hover  {
+  color: #000;
+  text-decoration: underline;
+}
